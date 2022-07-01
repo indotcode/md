@@ -1,0 +1,22 @@
+.entrance{
+  margin: 0 30px;
+}
+
+.entrance__link{
+  background-image: url("./images/icon/entrance.png");
+  display: block;
+  width: 34px;
+  height: 34px;
+}
+
+@media screen and (max-width: 1070px){
+  .entrance {
+    margin: 0;
+  }
+
+  .entrance__link {
+    background-size: 22px;
+    width: 22px;
+    height: 22px;
+  }
+}

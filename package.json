@@ -4,7 +4,7 @@
   "description": "",
   "private": true,
   "scripts": {
-    "dist-development": "webpack --mode development --env.analyzer=1",
+    "dist-development": "webpack --mode development",
     "dist-production": "webpack --mode production",
     "watch": "webpack --watch --mode development",
     "server": "webpack-dev-server --mode development --open"

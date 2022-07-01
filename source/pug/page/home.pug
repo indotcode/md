@@ -1,7 +1,42 @@
 extends ./../layout/main.pug
 
 block variables
-  - var title = 'Главная страница MD'
+    - var title = 'Главная страница MD'
+    -
+      var menu = [
+          {title: 'Каталог', href: ''},
+          {title: 'ИНТЕРНЕТ-ЗАКАЗ', href: ''},
+          {title: 'АПТЕКИ', href: ''},
+          {title: 'ПОКУПАТЕЛЯМ', href: ''}
+      ]
 
 block content
-    div Your Logo
+    section.header
+        div.wrapper.header__wrapper
+            div.header__container
+                div.header__left
+                    div.logo
+                        a.logo__container
+                            span.logo__img MD
+                            span.logo__name Your Logo
+                div.header__right
+                    div.menu
+                        ul
+                            each item in menu
+                                li
+                                    a(href=item.href) #{item.title}
+                    div.entrance
+                        a(href="#").entrance__link
+                    div.basket
+                        a.basket__icon
+                        div.basket__price
+                            span 1500 р.
+                        div.basket__spic
+                    div.burger.burger-js
+                        span
+
+    section.be_healthy
+        div.wrapper.be_healthy__wrapper 1
+
+
+

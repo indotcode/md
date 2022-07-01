@@ -1,0 +1,38 @@
+.header{
+  background-color: #2C9FAE;
+}
+
+.header__wrapper{
+  padding-top: 65px;
+  padding-bottom: 40px;
+}
+
+.header__container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px
+}
+
+.header__left{
+
+}
+
+.header__right{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+@media screen and (max-width: 1070px){
+  .header__wrapper{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .header__right{
+    gap: 15px;
+  }
+}

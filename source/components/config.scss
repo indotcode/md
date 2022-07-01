@@ -1,10 +1,11 @@
 * {
-    outline: none;
+  outline: none;
 }
 
 html, body {
   font-family: 'Comfortaa', sans-serif;
   font-weight: 400;
+  font-size: 14px;
 }
 
 h1,
@@ -12,31 +13,32 @@ h2,
 h3,
 h4,
 h5,
-h6, 
+h6,
 p {
-    margin: 0;
+  margin: 0;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
+  transition: .3s;
+
+  &:hover {
+    opacity: .9;
     transition: .3s;
-    &:hover{
-        opacity: .9;
-        transition: .3s;
-    }
+  }
 }
 
 .wrapper {
-    box-sizing: border-box;
-    max-width: 1170px;
-    margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
+  box-sizing: border-box;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-@media screen and (max-width: 1406px){
-    // .wrapper {
-    //     padding-left: 20px;
-    //     padding-right: 20px;
-    // }
+@media screen and (max-width: 425px) {
+  .wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
