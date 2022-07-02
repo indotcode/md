@@ -6,6 +6,7 @@ html, body {
   font-family: 'Comfortaa', sans-serif;
   font-weight: 400;
   font-size: 14px;
+  background-color: #A4A4A4;
 }
 
 h1,
@@ -34,6 +35,10 @@ a {
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+section{
+  position: relative;
 }
 
 @media screen and (max-width: 425px) {

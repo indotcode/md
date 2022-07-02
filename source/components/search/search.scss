@@ -1,0 +1,40 @@
+.search{
+
+}
+
+.search__form{
+
+}
+
+.search__block{
+  height: 54px;
+  border-radius: 25px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.search__input{
+  width: calc(100% - 60px);
+  border: 0;
+  margin: 0 30px;
+  font-size: 15px;
+}
+
+.search__button{
+  background-color: #1162db;
+  text-transform: uppercase;
+  font-size: 20px;
+  padding: 0 35px;
+  height: 54px;
+  border: 0;
+  border-radius: 0 25px 25px 0;
+  color: #fff;
+  cursor: pointer;
+  transition: .3s;
+  &:hover{
+    transition: .3s;
+    opacity: .9;
+  }
+}

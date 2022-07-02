@@ -9,6 +9,7 @@
   visibility: hidden;
   opacity: 0;
   overflow: hidden;
+  z-index: 999;
   &--active{
     height: calc(100vh - 70px);
     transition: .3s;

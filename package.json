@@ -50,5 +50,7 @@
     "precss": "^4.0.0",
     "normalize.css": "^8.0.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "request": "^2.79.0"
+  }
 }

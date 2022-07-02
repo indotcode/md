@@ -2,6 +2,8 @@
 @import "../node_modules/normalize.css/normalize.css";
 @import "components/config.scss";
 
+@import "components/bg/bg";
+
 @import "components/navigation_template";
 
 @import "components/header/header";
@@ -16,3 +18,10 @@
 @import "components/basket/basket";
 
 @import "components/burger/burger";
+
+@import "components/be_healthy/be_healthy";
+
+@import "components/search/search";
+@import "components/search/search_tag";
+
+@import "components/pharmacies/pharmacies";

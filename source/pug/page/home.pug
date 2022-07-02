@@ -3,12 +3,44 @@ extends ./../layout/main.pug
 block variables
     - var title = 'Главная страница MD'
     -
-      var menu = [
-          {title: 'Каталог', href: ''},
-          {title: 'ИНТЕРНЕТ-ЗАКАЗ', href: ''},
-          {title: 'АПТЕКИ', href: ''},
-          {title: 'ПОКУПАТЕЛЯМ', href: ''}
-      ]
+        var menu = [
+            {title: 'Каталог', href: ''},
+            {title: 'ИНТЕРНЕТ-ЗАКАЗ', href: ''},
+            {title: 'АПТЕКИ', href: ''},
+            {title: 'ПОКУПАТЕЛЯМ', href: ''}
+        ]
+    - var search_tag = ['Гигиена', 'КРАСОТА', 'БАДЫ', 'ВИТАМИНЫ', 'ДЛЯ БЕРЕМЕННЫХ', 'COVID-19', 'ОДЕЖДА', 'ОДЕЖДА']
+    -
+        var pharmacies = [
+            {
+                title: 'ЛЕКАРСТВА',
+                images: '../../images/pharmacies/1.jpg'
+            },
+            {
+                title: 'БАДЫ',
+                images: '../../images/pharmacies/2.jpg'
+            },
+            {
+                title: 'КОСМЕТИКА',
+                images: '../../images/pharmacies/3.jpg'
+            },
+            {
+                title: 'ДЕТСКИЕ ТОВАРЫ',
+                images: '../../images/pharmacies/4.jpg'
+            },
+            {
+                title: 'МЕД. ПРЕНАДЛЕЖНОСТИ',
+                images: '../../images/pharmacies/5.jpg'
+            },
+            {
+                title: 'ТОВАРЫ ДЛЯ ГИГИЕНЫ',
+                images: '../../images/pharmacies/6.jpg'
+            },
+            {
+                title: 'ДИЕТИЧЕСКОЕ ПИТАНИЕ',
+                images: '../../images/pharmacies/7.jpg'
+            }
+        ]
 
 block content
     section.header
@@ -35,8 +67,58 @@ block content
                     div.burger.burger-js
                         span
 
+
+
     section.be_healthy
-        div.wrapper.be_healthy__wrapper 1
+        div.wrapper.be_healthy__wrapper
+            h2.be_healthy__h2 Будте здоровы
+            div.search
+                form.search__form
+                    div.search__block
+                        input(name="q" type="text" id="search" placeholder="ВВЕДИТЕ НАЗВАНИЕ ИНТЕРЕСУЮЩЕГО ВАС ТОВАРА").search__input
+                        button.search__button Найти
+            div.search_tag
+                ul
+                    each item in search_tag
+                        li
+                            a(href="#") #{item}
+
+    section.pharmacies
+        div.wrapper.pharmacies__wrapper
+            h2.pharmacies__h2 Аптеки
+            div.pharmacies__list
+                a(href="#").pharmacies__item
+                    div.pharmacies__title Лекарства
+                    div.pharmacies__images
+                        img(src=require("../../images/pharmacies/1.jpg").default)
+                a(href="#").pharmacies__item
+                    div.pharmacies__title БАДЫ
+                    div.pharmacies__images
+                        img(src=require("../../images/pharmacies/2.jpg").default)
+                a(href="#").pharmacies__item
+                    div.pharmacies__title КОСМЕТИКА
+                    div.pharmacies__images
+                        img(src=require("../../images/pharmacies/3.jpg").default)
+                a(href="#").pharmacies__item
+                    div.pharmacies__title ДЕТСКИЕ ТОВАРЫ
+                    div.pharmacies__images
+                        img(src=require("../../images/pharmacies/4.jpg").default)
+                a(href="#").pharmacies__item
+                    div.pharmacies__title МЕД. ПРЕНАДЛЕЖНОСТИ
+                    div.pharmacies__images
+                        img(src=require("../../images/pharmacies/5.jpg").default)
+                a(href="#").pharmacies__item
+                    div.pharmacies__title ТОВАРЫ ДЛЯ ГИГИЕНЫ
+                    div.pharmacies__images
+                        img(src=require("../../images/pharmacies/6.jpg").default)
+                a(href="#").pharmacies__item
+                    div.pharmacies__title ДИЕТИЧЕСКОЕ ПИТАНИЕ
+                    div.pharmacies__images
+                        img(src=require("../../images/pharmacies/7.jpg").default)
+                a(href="#").pharmacies__item_next
+                    div.pharmacies__title_next Весь каталог <br> товаров
+
+
 
 
 
