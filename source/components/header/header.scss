@@ -26,7 +26,7 @@
   gap: 20px;
 }
 
-@media screen and (max-width: 1070px){
+@media screen and (max-width: 1090px){
   .header__wrapper{
     padding-top: 10px;
     padding-bottom: 10px;
@@ -34,5 +34,11 @@
 
   .header__right{
     gap: 15px;
+  }
+}
+
+@media screen and (max-width: 424px){
+  .header__right{
+    gap: 10px;
   }
 }

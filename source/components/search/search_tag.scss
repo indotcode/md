@@ -20,3 +20,10 @@
     }
   }
 }
+
+@media screen and (max-width: 1000px){
+  .search_tag ul{
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+}

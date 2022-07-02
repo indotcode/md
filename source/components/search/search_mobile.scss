@@ -1,12 +1,14 @@
-.search{
+.search_mobile{
+  display: none;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.search_mobile__form{
 
 }
 
-.search__form{
-
-}
-
-.search__block{
+.search_mobile__block{
   height: 54px;
   border-radius: 25px;
   background-color: #fff;
@@ -15,14 +17,14 @@
   width: 100%;
 }
 
-.search__input{
+.search_mobile__input{
   width: calc(100% - 60px);
   border: 0;
   margin: 0 30px;
   font-size: 15px;
 }
 
-.search__button{
+.search_mobile__button{
   background-color: #1162db;
   text-transform: uppercase;
   font-size: 20px;
@@ -39,14 +41,22 @@
   }
 }
 
+.search_mobile__button_svg{
+  display: none;
+}
+
 @media screen and (max-width: 768px){
-  .search__button{
+  .search_mobile{
+    display: block;
+  }
+
+  .search_mobile__button{
     padding: 0 17px;
   }
-  .search__button_title{
+  .search_mobile__button_title{
     display: none;
   }
-  .search__button_svg{
+  .search_mobile__button_svg{
     display: block;
   }
 }

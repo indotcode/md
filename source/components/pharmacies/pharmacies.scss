@@ -3,7 +3,8 @@
 }
 
 .pharmacies__wrapper{
-  margin-top: 50px;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 .pharmacies__h2{
@@ -23,6 +24,7 @@
   border-radius: 25px;
   overflow: hidden;
   position: relative;
+  background-color: #ebebeb;
   filter: drop-shadow(0px 4px 16px rgba(0, 0, 0, 0.25));
 }
 
@@ -30,7 +32,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: calc(100% - 30px);
+  width: calc(100% - 80px);
   padding: 15px 40px;
   text-transform: uppercase;
   color: #000;
@@ -64,4 +66,19 @@
   align-items: center;
   justify-content: center;
   font-size: 20px;
+}
+
+@media screen and (max-width: 1000px){
+  .pharmacies__list{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 455px){
+  .pharmacies__list{
+    grid-template-columns: 1fr;
+  }
+  .pharmacies__title_next{
+    height: 100px;
+  }
 }
