@@ -1,7 +1,3 @@
-const galleryContainer = document.querySelector('.gallery-container');
-const galleryControlsContainer = document.querySelector('.gallery-controls');
-const galleryControls = ['previous', 'next'];
-const galleryItems = document.querySelectorAll('.gallery-item');
 
 class Carousel {
   constructor(container, items, controls) {
@@ -77,8 +73,15 @@ class Carousel {
   }
 }
 
-const exampleCarousel = new Carousel(galleryContainer, galleryItems, galleryControls);
+const galleryContainer = document.querySelector('.gallery-container');
+const galleryControlsContainer = document.querySelector('.gallery-controls');
+const galleryControls = ['previous', 'next'];
+const galleryItems = document.querySelectorAll('.gallery-item');
 
-exampleCarousel.setControls();
-// exampleCarousel.setNav();
-exampleCarousel.useControls();
+if(galleryContainer){
+  const exampleCarousel = new Carousel(galleryContainer, galleryItems, galleryControls);
+  exampleCarousel.setControls();
+  exampleCarousel.useControls();
+}
+
+

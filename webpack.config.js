@@ -37,7 +37,8 @@ module.exports = env => {
         },
         output: output,
         plugins: [
-            new VueLoaderPlugin()
+            // new VueLoaderPlugin(),
+            new BundleAnalyzerPlugin()
         ].concat(pluginsResult),
         module: {
             rules: [

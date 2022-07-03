@@ -1,19 +1,22 @@
-extends ./../layout/main.pug
+- var title = 'Навигация по шаблону MD'
+-
+    var map = [
+        {
+            title: 'Главная страница',
+            href: '/home.html'
+        }
+    ]
 
-block variables
-    - var title = 'Навигация по шаблону MD'
-    -
-        var map = [
-            {
-                title: 'Главная страница',
-                href: '/home.html'
-            }
-        ]
-
-block content
-    div.navigation_template
-        h2 Навигация по шаблону MD
-        ul
-            each item in map
-                li
-                    a(href=item.href) #{item.title}
+doctype html
+html(lang="ru")
+    head
+        meta(charset="utf-8")
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        title #{title}
+    body.navigation_template
+        div.navigation_template__block
+            h2 Навигация по шаблону
+            ul
+              each item in map
+                  li
+                      a(href=item.href) #{item.title}

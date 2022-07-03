@@ -48,9 +48,8 @@
     "file-loader": "^6.0.0",
     "fs": "0.0.1-security",
     "precss": "^4.0.0",
-    "normalize.css": "^8.0.1"
-  },
-  "dependencies": {
+    "normalize.css": "^8.0.1",
     "request": "^2.79.0"
-  }
+  },
+  "dependencies": {}
 }
