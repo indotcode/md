@@ -1,0 +1,111 @@
+.social{
+
+}
+
+.social__wrapper{
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.social__subscribe{
+
+}
+
+.social__subscribe_form{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.social__subscribe_title{
+  text-transform: uppercase;
+  font-size: 20px;
+  width: 400px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+}
+
+.social__subscribe_block{
+  background-color: #fff;
+  border-radius: 25px;
+  width: 400px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.social__subscribe_input{
+  border: 0;
+  margin: 0 30px;
+  font-size: 15px;
+  width: calc(100% - 60px - 50px);
+}
+
+.social__subscribe_button{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border: 0;
+  border-radius: 0 25px 25px 0;
+}
+
+.social__link{
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.social__link_title{
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  width: 400px;
+  text-align: center;
+}
+
+.social__link_list{
+  width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social__link_images{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+  }
+}
+
+.social__link_item{
+  transition: .3s;
+  &:hover{
+    transition: .3s;
+    opacity: .9;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .social__subscribe_block,
+  .social__link_list{
+    width: 100%;
+  }
+}
