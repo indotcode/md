@@ -1,0 +1,33 @@
+.breadcrumbs{
+
+}
+
+.breadcrumbs__wrapper{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.breadcrumbs__list{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  a{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-size: 12px;
+    color: #424242;
+    &::after{
+      content: "";
+      margin-top: -2px;
+      display: block;
+      background-image: url("./images/icon/arrow.png");
+      width: 14px;
+      height: 8px;
+    }
+  }
+  span{
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,12 @@
+- var category = ['Боль в горле', 'Витамин С', 'Кашель', 'Насморк', 'Противовирусные, иммунокорректоры', 'Арбидол', 'ГриппоФлю', 'ЛациВит']
+
+div.category
+    each val, index in category
+        if(index < 4)
+            div.category__item.category__item--active
+                a(href="#") #{val}
+        else
+            div.category__item
+                a(href="#") #{val}
+
+    div.category__add Ещё категории

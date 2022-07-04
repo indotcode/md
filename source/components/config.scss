@@ -3,13 +3,14 @@
 }
 
 html, body {
-  font-family: 'Comfortaa', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 14px;
+  color: #424242;
 }
 
 .body_bg{
-  background-color: #A4A4A4;
+  background-color: #DFDADA;
 }
 
 h1,
@@ -25,7 +26,7 @@ p {
 a {
   text-decoration: none;
   transition: .3s;
-
+  color: #424242;
   &:hover {
     opacity: .9;
     transition: .3s;
@@ -44,9 +45,17 @@ section{
   position: relative;
 }
 
+@media screen and (max-width: 1090px){
+  body{
+    margin-top: 70px;
+  }
+}
+
 @media screen and (max-width: 425px) {
   .wrapper {
     padding-left: 15px;
     padding-right: 15px;
   }
 }
+
+

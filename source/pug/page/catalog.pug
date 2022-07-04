@@ -1,0 +1,33 @@
+extends ./../layout/main.pug
+
+block variables
+  - var title = 'Каталог MD'
+
+
+block content
+    include ../includes/header_fixed.pug
+
+    include ../includes/header.pug
+
+    include ../includes/be_healthy.pug
+
+    section.breadcrumbs
+        div.wrapper.breadcrumbs__wrapper
+            div.breadcrumbs__list
+                a(href="#").breadcrumbs__item Аптека
+                a(href="#").breadcrumbs__item Каталог
+                a(href="#").breadcrumbs__item Лекарства и БАД
+                span Простуда и грипп
+
+    section.catalog
+        div.wrapper.catalog__wrapper
+            h1.catalog__h1 Простуда и грипп
+            div.catalog__container
+                div.catalog__category
+                    include ../includes/category.pug
+                div.catalog__content 1223
+
+
+    include ../includes/social.pug
+
+    include ../includes/footer.pug

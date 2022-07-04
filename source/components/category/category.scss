@@ -1,0 +1,32 @@
+.category{
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr;
+}
+
+.category__item{
+  display: none;
+  a{
+    font-weight: 700;
+    font-size: 24px;
+    display: block;
+  }
+  &--active{
+    display: block;
+  }
+}
+
+.category__add{
+  font-weight: 700;
+  font-size: 24px;
+  display: block;
+  cursor: pointer;
+  text-decoration-line: underline;
+  text-underline-offset: 5px;
+  &:hover{
+    text-decoration: none
+  }
+  &--none{
+    display: none;
+  }
+}

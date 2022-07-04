@@ -11,13 +11,15 @@
 
   }
   a{
-    color: #fff;
     text-transform: uppercase;
     text-decoration-line: underline;
     text-underline-offset: 5px;
     &:hover{
       text-decoration: none;
     }
+  }
+  &--min{
+    padding: 20px 25px 5px 25px;
   }
 }
 

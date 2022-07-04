@@ -1,0 +1,27 @@
+.catalog{
+
+}
+
+.catalog__wrapper{
+  margin-bottom: 50px;
+}
+
+.catalog__h1{
+  font-weight: 700;
+  font-size: 32px;
+  padding-bottom: 15px;
+}
+
+.catalog__container{
+  display: flex;
+  gap: 45px;
+}
+
+.catalog__category{
+  margin-top: 50px;
+  width: 290px;
+}
+
+.catalog__content{
+  width: calc(100% - 290px - 45px);
+}

@@ -7,6 +7,7 @@
 @import "components/navigation_template";
 
 @import "components/header/header";
+@import "components/header/header_fixed";
 
 @import "components/logo/logo";
 
@@ -39,3 +40,9 @@
 @import "components/social/social";
 
 @import "components/footer/footer";
+
+@import "components/breadcrumbs/breadcrumbs";
+
+@import "components/catalog/catalog";
+
+@import "components/category/category";
