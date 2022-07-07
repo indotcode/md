@@ -25,3 +25,14 @@
 .catalog__content{
   width: calc(100% - 290px - 45px);
 }
+
+.catalog__list{
+  display: grid;
+  gap: 45px;
+  &--three{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  &--one{
+    grid-template-columns: 1fr;
+  }
+}
