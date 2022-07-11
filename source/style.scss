@@ -31,7 +31,7 @@
 
 @import "components/news_promotions/news_promotions";
 
-@import "components/carousel/carousel";
+@import "components/gallery/gallery";
 
 @import "components/brands/brands";
 
@@ -48,3 +48,11 @@
 @import "components/card/card_vertical";
 
 @import "components/category/category";
+
+@import "components/pagination/pagination";
+
+@import "components/option/option_catalog";
+
+@import '@splidejs/splide/src/css/core/index';
+
+@import "components/carousel/carousel";

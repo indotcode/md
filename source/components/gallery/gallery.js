@@ -1,7 +1,6 @@
 
-class Carousel {
+class Gallery {
   constructor(container, items, controls) {
-    this.carouselContainer = container;
     this.carouselControls = controls;
     this.carouselArray = [...items];
   }
@@ -19,7 +18,6 @@ class Carousel {
     });
   }
 
-  // Update the current order of the carouselArray and gallery
   setCurrentState(direction) {
 
     if (direction.className === 'gallery-controls-previous') {
@@ -31,17 +29,6 @@ class Carousel {
     this.updateGallery();
   }
 
-  // Construct the carousel navigation
-  // setNav() {
-    // galleryContainer.appendChild(document.createElement('ul')).className = 'gallery-nav';
-
-    // this.carouselArray.forEach(item => {
-    //   const nav = galleryContainer.lastElementChild;
-    //   nav.appendChild(document.createElement('li'));
-    // });
-  // }
-
-  // Construct the carousel controls
   setControls() {
     this.carouselControls.forEach(control => {
       galleryControlsContainer.appendChild(document.createElement('button')).className = `gallery-controls-${control}`;
@@ -60,7 +47,6 @@ class Carousel {
     });
   }
 
-  // Add a click event listener to trigger setCurrentState method to rearrange carousel
   useControls() {
     const triggers = [...galleryControlsContainer.childNodes];
 
@@ -79,9 +65,9 @@ const galleryControls = ['previous', 'next'];
 const galleryItems = document.querySelectorAll('.gallery-item');
 
 if(galleryContainer){
-  const exampleCarousel = new Carousel(galleryContainer, galleryItems, galleryControls);
-  exampleCarousel.setControls();
-  exampleCarousel.useControls();
+  const exampleGallery = new Gallery(galleryContainer, galleryItems, galleryControls);
+  exampleGallery.setControls();
+  exampleGallery.useControls();
 }
 
 

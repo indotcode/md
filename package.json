@@ -50,5 +50,7 @@
     "request": "^2.79.0",
     "dotenv": "^16.0.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@splidejs/splide": "^4.0.7"
+  }
 }

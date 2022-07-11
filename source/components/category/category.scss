@@ -30,3 +30,18 @@
     display: none;
   }
 }
+
+@media screen and (max-width: 810px){
+  .category__item a {
+    font-size: 15px;
+  }
+  .category {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  .category__add {
+    font-size: 15px;
+  }
+}

@@ -26,6 +26,7 @@ block content
                 div.catalog__category
                     include ../includes/category.pug
                 div.catalog__content
+                    include ../includes/option_catalog.pug
                     div.catalog__list.catalog__list--three
                         div.card_vertical
                             div.card_vertical__hit Хит продаж
@@ -43,29 +44,78 @@ block content
                         div.card_vertical
                             div.card_vertical__hit Хит продаж
                             div.card_vertical__images
-                                img(src=require("../../images/catalog/1.png").default)
-                            div.card_vertical__cat Арбидол
-                            h3.card_vertical__title Арбидол противовирусное от гриппа и ОРВИ капс. 100мг 20шт
+                                img(src=require("../../images/catalog/2.png").default)
+                            div.card_vertical__cat Liksivum
+                            h3.card_vertical__title Витамин С Liksivum таб шип. 900мг 20 шт
                             +cardVerticalRating()
                             div.card_vertical__availability В наличии
                             div.card_vertical__basket
-                                div.card_vertical__price От 448 Руб
+                                div.card_vertical__price От 268 Руб
                                 div.card_vertical__basket_icon
                             div.card_vertical__buy
                                 a(href="") Купить в один клик
                         div.card_vertical
                             div.card_vertical__hit Хит продаж
                             div.card_vertical__images
-                                img(src=require("../../images/catalog/1.png").default)
-                            div.card_vertical__cat Арбидол
-                            h3.card_vertical__title Арбидол противовирусное от гриппа и ОРВИ капс. 100мг 20шт
+                                img(src=require("../../images/catalog/3.png").default)
+                            div.card_vertical__cat ГриппоФлю
+                            h3.card_vertical__title ГриппоФлю Экстра от простуды и гриппа лимонный 3 шт, порошок
                             +cardVerticalRating()
                             div.card_vertical__availability В наличии
                             div.card_vertical__basket
-                                div.card_vertical__price От 448 Руб
+                                div.card_vertical__price От 268 Руб
                                 div.card_vertical__basket_icon
                             div.card_vertical__buy
                                 a(href="") Купить в один клик
+                        div.card_vertical
+                            div.card_vertical__hit Хит продаж
+                            div.card_vertical__images
+                                img(src=require("../../images/catalog/3.png").default)
+                            div.card_vertical__cat ГриппоФлю
+                            h3.card_vertical__title ГриппоФлю Экстра от простуды и гриппа лимонный 3 шт, порошок
+                            +cardVerticalRating()
+                            div.card_vertical__availability В наличии
+                            div.card_vertical__basket
+                                div.card_vertical__price От 268 Руб
+                                div.card_vertical__basket_icon
+                            div.card_vertical__buy
+                                a(href="") Купить в один клик
+                        div.card_vertical
+                            div.card_vertical__hit Хит продаж
+                            div.card_vertical__images
+                                img(src=require("../../images/catalog/3.png").default)
+                            div.card_vertical__cat ГриппоФлю
+                            h3.card_vertical__title ГриппоФлю Экстра от простуды и гриппа лимонный 3 шт, порошок
+                            +cardVerticalRating()
+                            div.card_vertical__availability В наличии
+                            div.card_vertical__basket
+                                div.card_vertical__price От 268 Руб
+                                div.card_vertical__basket_icon
+                            div.card_vertical__buy
+                                a(href="") Купить в один клик
+                        div.card_vertical
+                            div.card_vertical__hit Хит продаж
+                            div.card_vertical__images
+                                img(src=require("../../images/catalog/3.png").default)
+                            div.card_vertical__cat ГриппоФлю
+                            h3.card_vertical__title ГриппоФлю Экстра от простуды и гриппа лимонный 3 шт, порошок
+                            +cardVerticalRating()
+                            div.card_vertical__availability В наличии
+                            div.card_vertical__basket
+                                div.card_vertical__price От 268 Руб
+                                div.card_vertical__basket_icon
+                            div.card_vertical__buy
+                                a(href="") Купить в один клик
+
+
+                    div.pagination
+                        a(href="") 1
+                        a(href="") 2
+                        a(href="") 3
+                        a(href="") 4
+                        span
+                        a(href="") 70
+                    +carousel("Новости и Акции")
 
 
     include ../includes/social.pug

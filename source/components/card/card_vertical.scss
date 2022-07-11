@@ -13,35 +13,52 @@
 }
 
 .card_vertical__images{
+  width: 100%;
+  height: 200px;
   img{
-
+    object-fit: scale-down;
+    width: 100%;
+    height: 100%;
   }
 }
 
 .card_vertical__cat{
-
+  font-size: 11px;
+  margin-bottom: 10px;
 }
 
 .card_vertical__title{
-
+  font-size: 14px;
+  height: 50px;
+  font-weight: 400;
 }
 
 .card_vertical__rating{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
   span{
-
+    cursor: pointer;
   }
 }
 
 .card_vertical__availability{
-
+  color: #2C9FAE;
+  font-weight: 400;
+  font-size: 15px;
 }
 
 .card_vertical__basket{
-
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .card_vertical__price{
-
+  font-size: 24px;
 }
 
 .card_vertical__basket_icon{
@@ -63,7 +80,12 @@
 }
 
 .card_vertical__buy{
+  margin-top: 15px;
   a{
-
+    text-transform: uppercase;
+    font-size: 13px;
+    text-decoration-line: underline;
+    text-underline-offset: 4px;
+    text-decoration-color: #2C9FAE;
   }
 }

@@ -28,11 +28,50 @@
 
 .catalog__list{
   display: grid;
-  gap: 45px;
+  gap: 25px;
   &--three{
     grid-template-columns: 1fr 1fr 1fr;
   }
   &--one{
     grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 1100px){
+  .catalog__list{
+    gap: 20px;
+    &--three{
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px){
+  .catalog__list{
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 810px){
+  .catalog__content {
+    width: 100%;
+  }
+  .catalog__category {
+    margin-top: 0;
+    width: 100%
+  }
+  .catalog__container {
+    display: block;
+    grid-gap: 45px;
+    gap: 45px;
+  }
+}
+
+@media screen and (max-width: 475px){
+  .catalog__list{
+    gap: 20px;
+    &--three{
+      grid-template-columns: 1fr;
+    }
   }
 }

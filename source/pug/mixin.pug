@@ -28,23 +28,52 @@ mixin search()
 
 mixin cardVerticalRating()
     div.card_vertical__rating
-        span
-            <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M9.09205 0L11.1888 6.21885H17.9739L12.4846 10.0623L14.5813 16.2812L9.09205 12.4377L3.60277 16.2812L5.69949 10.0623L0.210215 6.21885H6.99533L9.09205 0Z" fill="#FFC107"/>
-            </svg>
-        span
-            <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M9.09205 0L11.1888 6.21885H17.9739L12.4846 10.0623L14.5813 16.2812L9.09205 12.4377L3.60277 16.2812L5.69949 10.0623L0.210215 6.21885H6.99533L9.09205 0Z" fill="#FFC107"/>
-            </svg>
-        span
-            <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M9.09205 0L11.1888 6.21885H17.9739L12.4846 10.0623L14.5813 16.2812L9.09205 12.4377L3.60277 16.2812L5.69949 10.0623L0.210215 6.21885H6.99533L9.09205 0Z" fill="#FFC107"/>
-            </svg>
-        span
-            <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M9.09205 0L11.1888 6.21885H17.9739L12.4846 10.0623L14.5813 16.2812L9.09205 12.4377L3.60277 16.2812L5.69949 10.0623L0.210215 6.21885H6.99533L9.09205 0Z" fill="#FFC107"/>
-            </svg>
-        span
-            <svg width="17" height="16" viewBox="0 0 19 17" stroke="#000" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M9.70711 0L11.8038 6.21885H18.5889L13.0997 10.0623L15.1964 16.2812L9.70711 12.4377L4.21784 16.2812L6.31456 10.0623L0.825281 6.21885H7.6104L9.70711 0Z"/>
-            </svg>
+        +svgStarF()
+        +svgStarF()
+        +svgStarF()
+        +svgStarF()
+        +svgStarP()
+
+mixin svgStarF()
+    span
+        <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M9.09205 0L11.1888 6.21885H17.9739L12.4846 10.0623L14.5813 16.2812L9.09205 12.4377L3.60277 16.2812L5.69949 10.0623L0.210215 6.21885H6.99533L9.09205 0Z" fill="#FFC107"/>
+        </svg>
+
+mixin svgStarP()
+    span
+        <svg width="16" height="15" viewBox="0 0 19 17" stroke="#000" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M9.70711 0L11.8038 6.21885H18.5889L13.0997 10.0623L15.1964 16.2812L9.70711 12.4377L4.21784 16.2812L6.31456 10.0623L0.825281 6.21885H7.6104L9.70711 0Z"/>
+        </svg>
+
+mixin carousel(title)
+    div.carousel
+        h3.carousel__h3  #{title}
+        div.splide
+            div.splide__track
+                div.splide__list
+                    div.splide__slide
+                        a(href="#")
+                            div.carousel__images
+                                img(src=require("../../images/new1.jpg").default)
+                            div.carousel__title скидка 30% на Антигриппин
+                    div.splide__slide
+                        a(href="#")
+                            div.carousel__images
+                                img(src=require("../../images/new2.jpg").default)
+                            div.carousel__title скидка % на лекарство
+                    div.splide__slide
+                        a(href="#")
+                            div.carousel__images
+                                img(src=require("../../images/new3.jpg").default)
+                            div.carousel__title скидка 30% на Антигриппин
+                    div.splide__slide
+                        a(href="#")
+                            div.carousel__images
+                                img(src=require("../../images/new1.jpg").default)
+                            div.carousel__title скидка 30% на Антигриппин
+                    div.splide__slide
+                        a(href="#")
+                            div.carousel__images
+                                img(src=require("../../images/new2.jpg").default)
+                            div.carousel__title скидка 30% на Антигриппин
