@@ -1,0 +1,178 @@
+.product{
+
+}
+
+.product__wrapper{
+
+}
+
+.product__container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 30px
+}
+
+.product__main{
+  width: calc(100% - 330px - 50px);
+  background: #fff;
+  border-radius: 25px;
+  padding: 25px;
+  display: flex;
+  gap: 20px
+}
+
+.product__left{
+  width: 230px;
+}
+
+.product__hit{
+  font-weight: 400;
+  font-size: 16px;
+  text-decoration-line: underline;
+  text-underline-offset: 4px;
+  text-decoration-color: #FFC107;
+  margin-bottom: 5px;
+}
+
+.product__images{
+  img{
+
+  }
+}
+
+.product__buy{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.product__buy_price{
+  font-size: 20px;
+}
+
+.product__buy_a{
+  background: #2C9FAE;
+  color: #fff;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-size: 15px;
+  padding: 5px 20px;
+}
+
+.product__into{
+  font-size: 10px;
+  color: #414141;
+}
+
+.product__right{
+  width: calc(100% - 230px);
+}
+
+.product__title{
+  color: #414141;
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.product__delivery{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #414141;
+  margin-bottom: 8px;
+  &:before{
+    content: "";
+    background: url("./images/icon/delivery.png") no-repeat;
+    background-size: 32px;
+    width: 32px;
+    height: 24px;
+  }
+}
+
+.product__communication{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.product__communication_block{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.product__raiting{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.product__reviews{
+  color: #414141;
+}
+
+.product__availability{
+  font-size: 15px;
+  color: #2C9FAE;
+}
+
+.product__meta_list{
+
+}
+
+.product__meta_item{
+  display: flex;
+  padding: 5px 0;
+  flex-wrap: wrap;
+  gap: 15px;
+  span{
+    font-size: 14px;
+    color: #000000;
+    &:nth-child(1){
+      width: 165px;
+    }
+    &:nth-child(2){
+      width: calc(100% - 180px);
+    }
+  }
+}
+
+
+.product__info{
+  width: calc(300px - 50px);
+  background: #fff;
+  border-radius: 25px;
+  padding: 25px;
+}
+
+.product__info_images{
+  img{
+
+  }
+}
+
+.product__info_dow{
+
+}
+
+.product__info_social{
+
+}
+
+.product__info_social_title{
+
+}
+
+.product__info_social_element{
+  a{
+    img{
+
+    }
+  }
+}

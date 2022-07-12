@@ -12,14 +12,6 @@ import "./components/category/category.js"
 
 import "./components/option/option_catalog__sort_select"
 
-import Splide from '@splidejs/splide';
+import "./components/carousel/carousel"
 
-new Splide( '.splide', {
-  arrows: false,
-  perPage: 3,
-  gap: 20,
-  breakpoints: {
-    1000: { perPage: 2 },
-    640 : { perPage: 1 },
-  },
-} ).mount();
+

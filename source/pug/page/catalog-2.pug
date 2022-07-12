@@ -1,0 +1,89 @@
+extends ./../layout/main.pug
+
+block variables
+  - var title = 'Каталог MD'
+
+
+block content
+    include ../includes/header_fixed.pug
+
+    include ../includes/header.pug
+
+    include ../includes/be_healthy.pug
+
+    section.breadcrumbs
+        div.wrapper.breadcrumbs__wrapper
+            div.breadcrumbs__list
+                a(href="#").breadcrumbs__item Аптека
+                a(href="#").breadcrumbs__item Каталог
+                a(href="#").breadcrumbs__item Лекарства и БАД
+                span Простуда и грипп
+
+    section.catalog
+        div.wrapper.catalog__wrapper
+            h1.catalog__h1 Простуда и грипп
+            div.catalog__container
+                div.catalog__category
+                    include ../includes/category.pug
+                div.catalog__content
+                    include ../includes/option_catalog.pug
+                    div.catalog__list.catalog__list--one
+                        div.card_horizontal
+                            div.card_horizontal__images
+                                img(src=require("../../images/catalog/1.png").default)
+                            div.card_horizontal__container
+                                div.card_horizontal__block
+                                    div.card_horizontal__hit Хит продаж
+                                    +cardHorizontalRating()
+                                div.card_horizontal__block
+                                    div.card_horizontal__block_one
+                                        div.card_horizontal__cat Арбидол
+                                        h3.card_horizontal__title Арбидол противовирусное от гриппа и ОРВИ капс. 100мг 20шт
+                                        div.card_horizontal__price От 448 Руб
+                                    div.card_horizontal__block_tho
+                                        div.card_horizontal__availability В наличии
+                                        div.card_horizontal__basket_icon
+                                        div.card_horizontal__buy
+                                            a(href="") Купить в один клик
+                        div.card_horizontal
+                            div.card_horizontal__images
+                                img(src=require("../../images/catalog/2.png").default)
+                            div.card_horizontal__container
+                                div.card_horizontal__block
+                                    div.card_horizontal__hit Хит продаж
+                                    +cardHorizontalRating()
+                                div.card_horizontal__block
+                                    div.card_horizontal__block_one
+                                        div.card_horizontal__cat Арбидол
+                                        h3.card_horizontal__title Арбидол противовирусное от гриппа и ОРВИ капс. 100мг 20шт
+                                        div.card_horizontal__price От 448 Руб
+                                    div.card_horizontal__block_tho
+                                        div.card_horizontal__availability В наличии
+                                        div.card_horizontal__basket_icon
+                                        div.card_horizontal__buy
+                                            a(href="") Купить в один клик
+                        div.card_horizontal
+                            div.card_horizontal__images
+                                img(src=require("../../images/catalog/3.png").default)
+                            div.card_horizontal__container
+                                div.card_horizontal__block
+                                    div.card_horizontal__hit Хит продаж
+                                    +cardHorizontalRating()
+                                div.card_horizontal__block
+                                    div.card_horizontal__block_one
+                                        div.card_horizontal__cat Арбидол
+                                        h3.card_horizontal__title Арбидол противовирусное от гриппа и ОРВИ капс. 100мг 20шт
+                                        div.card_horizontal__price От 448 Руб
+                                    div.card_horizontal__block_tho
+                                        div.card_horizontal__availability В наличии
+                                        div.card_horizontal__basket_icon
+                                        div.card_horizontal__buy
+                                            a(href="") Купить в один клик
+
+                    +pagination()
+                    +carousel("Новости и Акции")
+
+
+    include ../includes/social.pug
+
+    include ../includes/footer.pug

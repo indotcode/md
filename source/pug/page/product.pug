@@ -1,0 +1,98 @@
+extends ./../layout/main.pug
+
+block variables
+  - var title = 'Каталог MD'
+
+
+block content
+    include ../includes/header_fixed.pug
+
+    include ../includes/header.pug
+
+    include ../includes/be_healthy.pug
+
+    section.breadcrumbs
+        div.wrapper.breadcrumbs__wrapper
+            div.breadcrumbs__list
+                a(href="#").breadcrumbs__item Аптека
+                a(href="#").breadcrumbs__item Каталог
+                a(href="#").breadcrumbs__item Лекарства и БАД
+                a(href="#").breadcrumbs__item Простуда и грипп
+                span Арбидол противовирусное от гриппа и ОРВИ капс. 100мг 20шт
+
+    section.product
+        div.wrapper.product__wrapper
+            div.product__container
+                div.product__main
+                    div.product__left
+                        div.product__hit Хит продаж
+                        div.product__images
+                            img(src=require("../../images/catalog/1.png").default)
+                        div.product__buy
+                            div.product__buy_price От 448 Руб
+                            a(href="").product__buy_a Купить
+                        div.product__into Внешний вид товара может отличаться от изображённого на фотографии
+                    div.product__right
+                        div.product__title Арбидол противовирусное от гриппа и ОРВИ капс. 100мг 20шт
+                        div.product__delivery возможна доставка на дом
+                        div.product__communication
+                            div.product__communication_block
+                                div.product__raiting
+                                    +svgStarF()
+                                    +svgStarF()
+                                    +svgStarF()
+                                    +svgStarF()
+                                    +svgStarP()
+                                div.product__reviews 101 отзыв
+                            div.product__availability В наличии
+                        div.product__meta_list
+                            div.product__meta_item
+                                span Бренд:
+                                spna Арбидол
+                            div.product__meta_item
+                                span Производитель:
+                                spna ОТИСИФАРМ
+                            div.product__meta_item
+                                span Завод производитель:
+                                spna Фармстандарт, Россия
+                            div.product__meta_item
+                                span Форма выпуска:
+                                spna Капсулы
+                            div.product__meta_item
+                                span Количество в упаковке:
+                                spna 20
+                            div.product__meta_item
+                                span Действующие вещества:
+                                spna умифеновир
+                            div.product__meta_item
+                                span Возраст:
+                                spna 6 лет
+                            div.product__meta_item
+                                span Дозировка:
+                                spna 100 мг
+                            div.product__meta_item
+                                span Назначение:
+                                spna Противовирусные, иммунокорректоры
+
+
+                div.product__info
+                    div.product__info_images
+                        img(src=require("../../images/catalog/1.png").default)
+                    div.product__info_dow Скачать инструкцию
+                    div.product__info_social
+                        div.product__info_social_title Поделиться в соц. сетях
+                        div.product__info_social_element
+                            a(href="")
+                                img(src=require("../../images/social/od2.png").default)
+                            a(href="")
+                                img(src=require("../../images/social/tw2.png").default)
+                            a(href="")
+                                img(src=require("../../images/social/vk2.png").default)
+                            a(href="")
+                                img(src=require("../../images/social/od2.png").default)
+                            a(href="")
+                                img(src=require("../../images/social/ml.png").default)
+
+    include ../includes/social.pug
+
+    include ../includes/footer.pug
