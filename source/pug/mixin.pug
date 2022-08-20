@@ -98,21 +98,6 @@ mixin pagination()
         span
         a(href="") 70
 
-mixin card_vertical(title, cat, img)
-    div.card_vertical
-        div.card_vertical__hit Хит продаж
-        div.card_vertical__images
-            img(src=require(img).default)
-        div.card_vertical__cat #{cat}
-        h3.card_vertical__title #{title}
-        +cardVerticalRating()
-        div.card_vertical__availability В наличии
-        div.card_vertical__basket
-            div.card_vertical__price От 268 Руб
-            div.card_vertical__basket_icon
-        div.card_vertical__buy
-            a(href="") Купить в один клик
-
 mixin benefits_list()
     div.benefits__list
         div.benefits__item
@@ -149,3 +134,68 @@ mixin icon_nal()
         <path d="M10.8904 10.5664H8.74316V11.5916H10.8904V10.5664Z" fill="#747474"/>
         <path d="M13.1806 12.3174H8.74316V13.1336H13.1806V12.3174Z" fill="#747474"/>
         </svg>
+
+
+mixin card_vertical(images, title, cat)
+    div.card_vertical
+        div.card_vertical__hit Хит продаж
+        div.card_vertical__images
+            img(src=require(`../../images/${images}`).default)
+        div.card_vertical__cat #{cat}
+        h3.card_vertical__title #{title}
+        +cardVerticalRating()
+        div.card_vertical__availability В наличии
+        div.card_vertical__basket
+            div.card_vertical__price
+                div.card_vertical__price_card
+                    span От 448 Руб
+                    +icon_card()
+                div.card_vertical__price_nal
+                    span От 448 Руб
+                    +icon_nal()
+            div.card_vertical__basket_icon
+        div.card_vertical__buy
+            a(href="") Купить в один клик
+
+mixin card_horizontal(images, title, cat)
+    div.card_horizontal
+        div.card_horizontal__images
+            img(src=require(`../../images/${images}`).default)
+        div.card_horizontal__container
+            div.card_horizontal__block
+                div.card_horizontal__hit Хит продаж
+                +cardHorizontalRating()
+            div.card_horizontal__block
+                div.card_horizontal__block_one
+                    div.card_horizontal__cat #{cat}
+                    h3.card_horizontal__title #{title}
+                    div.card_horizontal__price
+                        div.card_horizontal__price_card
+                            span От 448 Руб
+                            +icon_card()
+                        div.card_horizontal__price_nal
+                            span От 448 Руб
+                            +icon_nal()
+                div.card_horizontal__block_tho
+                    div.card_horizontal__availability В наличии
+                    div.card_horizontal__basket_icon
+                    div.card_horizontal__buy
+                        a(href="") Купить в один клик
+
+mixin card_mini(images, title)
+    div.card_mini
+        div.card_mini__hit Хит продаж
+        div.card_mini__block
+            div.card_mini__images
+                img(src=require(`../../images/${images}`).default)
+            div.card_mini__info
+                div.card_mini__title #{title}
+                div.card_mini__basket
+                    div.card_mini__price
+                        div.card_mini__price_card
+                            span От 448 Руб
+                            +icon_card()
+                        div.card_mini__price_nal
+                            span От 448 Руб
+                            +icon_nal()
+                    div.card_mini__basket_icon

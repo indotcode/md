@@ -1,0 +1,32 @@
+.product_with{
+  position: relative;
+  top: -60px
+}
+
+.product_with__h2{
+  margin-bottom: 33px;
+}
+
+.product_with__list{
+  display: grid;
+  gap: 30px;
+}
+
+@media screen and (max-width: 1161px){
+  .product_with__list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 1023px){
+  .product_with__list{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 703px){
+  .product_with__list{
+    grid-template-columns: 1fr;
+  }
+}

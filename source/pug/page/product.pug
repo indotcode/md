@@ -3,7 +3,6 @@ extends ./../layout/main.pug
 block variables
   - var title = 'Каталог MD'
 
-
 block content
     include ../includes/header_fixed.pug
 
@@ -88,22 +87,55 @@ block content
                 div.product__info
                     div.product__info_images
                         img(src=require("../../images/catalog/1.png").default)
-                    a(href="#").product__info_dow
-                        img(src=require("../../images/pdf.png").default)
-                        span Скачать инструкцию
-                    div.product__info_social
-                        div.product__info_social_title Поделиться в соц. сетях
-                        div.product__info_social_element
-                            a(href="")
-                                img(src=require("../../images/social/od2.png").default)
-                            a(href="")
-                                img(src=require("../../images/social/tw2.png").default)
-                            a(href="")
-                                img(src=require("../../images/social/vk2.png").default)
-                            a(href="")
-                                img(src=require("../../images/social/od2.png").default)
-                            a(href="")
-                                img(src=require("../../images/social/ml.png").default)
+                    div.product__info_block
+                        a(href="#").product__info_dow
+                            img(src=require("../../images/pdf.png").default)
+                            span Скачать инструкцию
+                        div.product__info_social
+                            div.product__info_social_title Поделиться в соц. сетях
+                            div.product__info_social_element
+                                a(href="")
+                                    img(src=require("../../images/social/od2.png").default)
+                                a(href="")
+                                    img(src=require("../../images/social/tw2.png").default)
+                                a(href="")
+                                    img(src=require("../../images/social/vk2.png").default)
+                                a(href="")
+                                    img(src=require("../../images/social/od2.png").default)
+                                a(href="")
+                                    img(src=require("../../images/social/ml.png").default)
+
+
+
+                div.product__menu
+                    ul
+                        li
+                            a(href="#") Аналоги
+                        li
+                            a(href="#") Инструкция
+                        li
+                            a(href="#") Форма выпуска
+                        li
+                            a(href="#") Отзывы
+                        li
+                            a(href="#") Наличие и цены
+            div.product_analogues
+                div.product_analogues__list
+                    +card_vertical("catalog/1.png", "Арбидол противовирусное от гриппа и ОРВИ капс. 100мг 20шт", "Арбидол")
+                    +card_vertical("catalog/2.png", "Витамин С Liksivum таб шип. 900мг 20 шт", "Liksivum")
+                    +card_vertical("catalog/3.png", "ГриппоФлю Экстра от простуды и гриппа лимонный 3 шт, порошок", "ГриппоФлю")
+
+                div.product_analogues__with
+                    div.product_with
+                        h2.product_with__h2 С этим также покупают
+                        div.product_with__list
+                            +card_mini("card-mini1.jpg", "Тест - система для выявления антигена")
+                            +card_mini("card-mini2.jpg", "Тест - система для выявления антигена")
+            include ../includes/product/product_instruction.pug
+
+            include ../includes/product/product_description.pug
+
+
 
 
 

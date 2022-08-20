@@ -50,6 +50,7 @@
 
 @import "components/card/card_vertical";
 @import "components/card/card_horizontal";
+@import "components/card/card_mini";
 
 @import "components/category/category";
 
@@ -63,3 +64,6 @@
 
 @import "components/product/product";
 @import "components/product/product_analogues";
+@import "components/product/product_with";
+@import "components/product/product_instruction";
+@import "components/product/product_description";
