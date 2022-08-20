@@ -1,0 +1,20 @@
+div.product_reviews
+    h2.product_reviews__h2 Отзывы
+    div.product_reviews__block
+        div.product_reviews__info
+            +cardVerticalRating()
+            span 40 отзывов
+        div.product_reviews__auto
+            p Для того, чтобы оставить отзыв, вам нужно&#160;
+                a(href="#") авторизоваться
+        div.product_reviews__list
+            each val in [1, 2, 3, 4, 5]
+                div.product_reviews__item
+                    div.product_reviews__item_content.
+                        Недавно читала про «Арбидол». Информация о нем мне показалась очень убедительной,
+                        чтобы взять его на заметку. Сейчас принимаю профилактическую дозу, заметила,
+                        что сил стало гораздо больше.
+                    div.product_reviews__item_info
+                        span Nastya | 07 сентября 2021, 11:30
+        div.product_reviews__next
+            a(href="#")  Показать ещё

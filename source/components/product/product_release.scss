@@ -1,0 +1,31 @@
+.product_release{
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.product_release__h2{
+  font-size: 30px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.product_release__list{
+  width: calc(100% - 330px);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px
+}
+
+
+@media screen and (max-width: 1140px){
+  .product_release__list {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 808px){
+  .product_release__list {
+    grid-template-columns: 1fr;
+  }
+}
