@@ -85,6 +85,32 @@
   font-size: 24px;
 }
 
+.card_horizontal__price_card{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  span:nth-child(2){
+    height: 25px;
+    width: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.card_horizontal__price_nal{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  span:nth-child(2){
+    height: 25px;
+    width: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 .card_horizontal__basket_icon{
   width: 32px;
   height: 32px;
@@ -104,6 +130,8 @@
 }
 
 .card_horizontal__buy{
+  display: flex;
+  align-items: flex-end;
   a{
     text-transform: uppercase;
     font-size: 13px;

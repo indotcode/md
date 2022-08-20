@@ -8,7 +8,11 @@ block content
 
     include ../includes/header.pug
 
-    include ../includes/be_healthy.pug
+    section.be_healthy
+        div.wrapper.be_healthy__wrapper
+            h2.be_healthy__h2 Будьте здоровы
+            +search()
+            +search_tag()
 
     section.pharmacies
         div.wrapper.pharmacies__wrapper
@@ -52,9 +56,9 @@ block content
                 a(href="#").pharmacies__item_next
                     div.pharmacies__title_next Весь каталог <br> товаров
 
-    section.news_promotions
-        div.wrapper.news_promotions__wrapper
-            h2.news_promotions__h2 Новости и Акции
+    section.news
+        div.wrapper.news__wrapper
+            h2.news__h2 Новости и Акции
             div.gallery
                 div.gallery-container
                     div(data-index="1").gallery-item.gallery-item-1
@@ -67,6 +71,26 @@ block content
                         a(href="#")
                             img(src=require("../../images/new2.jpg").default)
                 div.gallery-controls
+            div.news_card
+                a(href="#").news_card__block
+                    div.news_card__block_images
+                        img(src=require("../../images/news/news1.jpg").default)
+                    div.news_card__block_info
+                        div.news_card__block_title Новинка ассортимента - Мальвикс <br>Комплекс для нормализации сна
+                        div.news_card__block_data 02.08.2022
+                a(href="#").news_card__block
+                    div.news_card__block_images
+                        img(src=require("../../images/news/news2.jpg").default)
+                    div.news_card__block_info
+                        div.news_card__block_title Новинка ассортимента - Мальвикс <br>Комплекс для нормализации сна
+                        div.news_card__block_data 02.08.2022
+                a(href="#").news_card__line
+                    div.news_card__line_images
+                        img(src=require("../../images/news/news3.jpg").default)
+                    div.news_card__line_info
+                        div.news_card__line_title Конкурс для юных художников!
+                        div.news_card__line_data сроки 1-31 августа <br> 2022 года
+
 
     section.brands
         div.wrapper.brands__wrapper
@@ -106,6 +130,13 @@ block content
                             img(src=require("../../images/brands/brand8.png").default)
                         div.brands__title #Comp</br>any
 
+
+    section.benefits
+        div.wrapper.benefits__wrapper
+            h2.benefits__h2.benefits__h2--white Наши преимущества
+            +benefits_list()
+
+
     section.search_pharmacies
         div.wrapper.search_pharmacies__wrapper
             h2.search_pharmacies__h2 Поиск аптек на карте
@@ -130,7 +161,7 @@ block content
                 form.social__subscribe_form
                     div.social__subscribe_title ПОДПИШИТЕСЬ НА НОВОСТИ
                     div.social__subscribe_block
-                        input(name="subscribe" type="text" id="subscribe").social__subscribe_input
+                        input(name="subscribe" type="text" id="subscribe" placeholder="Введите электронную почту").social__subscribe_input
                         button.social__subscribe_button
                             | <svg width="16" height="27" viewBox="0 0 16 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M0.485976 23.7408C0.485975 26.4428 3.72311 27.8286 5.67828 25.9636L13.2404 18.7503C16.1316 15.9924 16.1316 11.3778 13.2404 8.61994L5.67828 1.40657C3.72312 -0.458428 0.485977 0.927415 0.485976 3.62942C0.485976 4.46931 0.829857 5.27257 1.43759 5.85228L4.33905 8.61993C7.23028 11.3778 7.23028 15.9924 4.33905 18.7503L1.43759 21.5179C0.829856 22.0976 0.485976 22.9009 0.485976 23.7408Z" fill="#C4C4C4"/>

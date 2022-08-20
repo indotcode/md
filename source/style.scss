@@ -29,7 +29,10 @@
 
 @import "components/pharmacies/pharmacies";
 
-@import "components/news_promotions/news_promotions";
+@import "components/news/news";
+@import "components/news/news_card";
+
+@import "components/benefits/benefits";
 
 @import "components/gallery/gallery";
 
@@ -59,3 +62,4 @@
 @import "components/carousel/carousel";
 
 @import "components/product/product";
+@import "components/product/product_analogues";

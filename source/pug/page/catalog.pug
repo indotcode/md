@@ -9,7 +9,11 @@ block content
 
     include ../includes/header.pug
 
-    include ../includes/be_healthy.pug
+    section.be_healthy
+        div.wrapper.be_healthy__wrapper
+            h2.be_healthy__h2 Будьте здоровы
+            +search()
+            +search_tag(2)
 
     section.breadcrumbs
         div.wrapper.breadcrumbs__wrapper
@@ -37,7 +41,13 @@ block content
                             +cardVerticalRating()
                             div.card_vertical__availability В наличии
                             div.card_vertical__basket
-                                div.card_vertical__price От 448 Руб
+                                div.card_vertical__price
+                                    div.card_vertical__price_card
+                                        span От 448 Руб
+                                        +icon_card()
+                                    div.card_vertical__price_nal
+                                        span От 448 Руб
+                                        +icon_nal()
                                 div.card_vertical__basket_icon
                             div.card_vertical__buy
                                 a(href="") Купить в один клик
@@ -50,7 +60,13 @@ block content
                             +cardVerticalRating()
                             div.card_vertical__availability В наличии
                             div.card_vertical__basket
-                                div.card_vertical__price От 268 Руб
+                                div.card_vertical__price
+                                    div.card_vertical__price_card
+                                        span От 448 Руб
+                                        +icon_card()
+                                    div.card_vertical__price_nal
+                                        span От 448 Руб
+                                        +icon_nal()
                                 div.card_vertical__basket_icon
                             div.card_vertical__buy
                                 a(href="") Купить в один клик
@@ -63,7 +79,13 @@ block content
                             +cardVerticalRating()
                             div.card_vertical__availability В наличии
                             div.card_vertical__basket
-                                div.card_vertical__price От 268 Руб
+                                div.card_vertical__price
+                                    div.card_vertical__price_card
+                                        span От 448 Руб
+                                        +icon_card()
+                                    div.card_vertical__price_nal
+                                        span От 448 Руб
+                                        +icon_nal()
                                 div.card_vertical__basket_icon
                             div.card_vertical__buy
                                 a(href="") Купить в один клик
@@ -76,7 +98,13 @@ block content
                             +cardVerticalRating()
                             div.card_vertical__availability В наличии
                             div.card_vertical__basket
-                                div.card_vertical__price От 268 Руб
+                                div.card_vertical__price
+                                    div.card_vertical__price_card
+                                        span От 448 Руб
+                                        +icon_card()
+                                    div.card_vertical__price_nal
+                                        span От 448 Руб
+                                        +icon_nal()
                                 div.card_vertical__basket_icon
                             div.card_vertical__buy
                                 a(href="") Купить в один клик
@@ -89,7 +117,13 @@ block content
                             +cardVerticalRating()
                             div.card_vertical__availability В наличии
                             div.card_vertical__basket
-                                div.card_vertical__price От 268 Руб
+                                div.card_vertical__price
+                                    div.card_vertical__price_card
+                                        span От 448 Руб
+                                        +icon_card()
+                                    div.card_vertical__price_nal
+                                        span От 448 Руб
+                                        +icon_nal()
                                 div.card_vertical__basket_icon
                             div.card_vertical__buy
                                 a(href="") Купить в один клик
@@ -102,7 +136,13 @@ block content
                             +cardVerticalRating()
                             div.card_vertical__availability В наличии
                             div.card_vertical__basket
-                                div.card_vertical__price От 268 Руб
+                                div.card_vertical__price
+                                    div.card_vertical__price_card
+                                        span От 448 Руб
+                                        +icon_card()
+                                    div.card_vertical__price_nal
+                                        span От 448 Руб
+                                        +icon_nal()
                                 div.card_vertical__basket_icon
                             div.card_vertical__buy
                                 a(href="") Купить в один клик

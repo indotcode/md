@@ -59,7 +59,33 @@
 }
 
 .card_vertical__price{
-  font-size: 24px;
+  font-size: 22px;
+}
+
+.card_vertical__price_card{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  span:nth-child(2){
+    height: 25px;
+    width: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.card_vertical__price_nal{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  span:nth-child(2){
+    height: 25px;
+    width: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .card_vertical__basket_icon{

@@ -2,6 +2,9 @@ mixin search_tag(type)
     if type === 1
         div.search_tag.search_tag--min
             +ul_search_tag()
+    else if type === 2
+        div.search_tag.search_tag--black
+            +ul_search_tag()
     else
         div.search_tag
             +ul_search_tag()
@@ -109,3 +112,40 @@ mixin card_vertical(title, cat, img)
             div.card_vertical__basket_icon
         div.card_vertical__buy
             a(href="") Купить в один клик
+
+mixin benefits_list()
+    div.benefits__list
+        div.benefits__item
+            div.benefits__images
+                img(src=require("../../images/benefits1.png").default)
+            div.benefits__title 3000 аптек<br>в 51 регионе
+        div.benefits__item
+            div.benefits__images
+                img(src=require("../../images/benefits2.png").default)
+            div.benefits__title Акции и<br>скидки
+        div.benefits__item
+            div.benefits__images
+                img(src=require("../../images/benefits3.png").default)
+            div.benefits__title Более 60000<br>товаров в ассортименте
+        div.benefits__item
+            div.benefits__images
+                img(src=require("../../images/benefits4.png").default)
+            div.benefits__title Доставка от 20 минут
+
+
+mixin icon_card()
+    span
+        <svg width="17" height="11" viewBox="0 0 17 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="17" width="11" height="17" rx="1" transform="rotate(90 17 0)" fill="#9F9F9F"/>
+        <rect x="17" y="7.07129" width="1.83333" height="17" transform="rotate(90 17 7.07129)" fill="#D9D9D9"/>
+        </svg>
+
+mixin icon_nal()
+    span
+        <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path opacity="0.79" d="M17.0103 16.258C19.9142 13.3541 19.9142 8.64592 17.0103 5.742C14.1064 2.83809 9.39823 2.83809 6.49432 5.742C3.59041 8.64592 3.59041 13.3541 6.49432 16.258C9.39823 19.1619 14.1064 19.1619 17.0103 16.258Z" fill="white" stroke="#CCCCCC" stroke-miterlimit="10"/>
+        <path d="M16.158 15.4055C18.5911 12.9724 18.5911 9.02758 16.158 6.59448C13.7249 4.16138 9.78002 4.16138 7.34692 6.59448C4.91382 9.02758 4.91382 12.9724 7.34692 15.4055C9.78002 17.8386 13.7249 17.8386 16.158 15.4055Z" stroke="#747474" stroke-width="2" stroke-miterlimit="10"/>
+        <path d="M12.587 11.5914H10.9106V14.6032H9.79297V7.40919C10.7236 7.40919 11.6564 7.40039 12.587 7.40039C15.4844 7.39819 15.491 11.5914 12.587 11.5914ZM10.9106 10.5662H12.587C14.0192 10.5662 14.0104 8.46519 12.587 8.46519H10.9106V10.5662Z" fill="#747474"/>
+        <path d="M10.8904 10.5664H8.74316V11.5916H10.8904V10.5664Z" fill="#747474"/>
+        <path d="M13.1806 12.3174H8.74316V13.1336H13.1806V12.3174Z" fill="#747474"/>
+        </svg>

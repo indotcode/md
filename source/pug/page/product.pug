@@ -9,7 +9,11 @@ block content
 
     include ../includes/header.pug
 
-    include ../includes/be_healthy.pug
+    section.be_healthy
+        div.wrapper.be_healthy__wrapper
+            h2.be_healthy__h2 Будьте здоровы
+            +search()
+            +search_tag(2)
 
     section.breadcrumbs
         div.wrapper.breadcrumbs__wrapper
@@ -29,7 +33,13 @@ block content
                         div.product__images
                             img(src=require("../../images/catalog/1.png").default)
                         div.product__buy
-                            div.product__buy_price От 448 Руб
+                            div.product__buy_price
+                                div.product__buy_price_card
+                                    span От 448 Руб
+                                    +icon_card()
+                                div.product__buy_price_nal
+                                    span От 448 Руб
+                                    +icon_nal()
                             a(href="").product__buy_a Купить
                         div.product__into Внешний вид товара может отличаться от изображённого на фотографии
                     div.product__right
@@ -78,7 +88,9 @@ block content
                 div.product__info
                     div.product__info_images
                         img(src=require("../../images/catalog/1.png").default)
-                    div.product__info_dow Скачать инструкцию
+                    a(href="#").product__info_dow
+                        img(src=require("../../images/pdf.png").default)
+                        span Скачать инструкцию
                     div.product__info_social
                         div.product__info_social_title Поделиться в соц. сетях
                         div.product__info_social_element
@@ -92,6 +104,8 @@ block content
                                 img(src=require("../../images/social/od2.png").default)
                             a(href="")
                                 img(src=require("../../images/social/ml.png").default)
+
+
 
     include ../includes/social.pug
 
