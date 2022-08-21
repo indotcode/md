@@ -1,0 +1,29 @@
+div.product_pharmacy
+    h2.product_pharmacy__h2 Проверьте наличие и цены в аптеке, в которой хотите забрать заказ
+    div.product_pharmacy__block
+        form.product_pharmacy__form
+            input(name="subscribe" type="text" placeholder="Адрес аптеки").product_pharmacy__input
+            button.product_pharmacy__button Найти
+        div.product_pharmacy__nav
+            ul
+                li
+                    a(href="#").product_pharmacy__nav_a.product_pharmacy__nav_a--active Показать списком
+                li
+                    a(href="#").product_pharmacy__nav_a Показать на карте
+        div.product_pharmacy__take
+            a(href="#") Забрать сегодня
+        div.product_pharmacy__list
+            div.product_pharmacy__item
+                a(href="#") Вишневского, 123
+                span.product_pharmacy__availability товар в наличии
+                span.product_pharmacy__price 450 р
+            div.product_pharmacy__item
+                a(href="#") Гвардейская, 43в
+                span.product_pharmacy__availability товар в наличии
+                span.product_pharmacy__price 450 р
+            div.product_pharmacy__item
+                a(href="#") Гвардейская, 43в
+                span.product_pharmacy__availability товар в наличии
+                span.product_pharmacy__price 450 р
+        div.product_pharmacy__next
+            a(href="#") Загрузить ещё

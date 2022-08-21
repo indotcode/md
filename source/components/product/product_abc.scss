@@ -1,0 +1,39 @@
+.product_abc{
+  margin-top: 60px;
+  margin-bottom: 60px;
+  width: calc(100% - 330px);
+}
+
+.product_abc__h2{
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.product_abc__block{
+  a{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #2C9FAE;
+  }
+}
+
+.product_abc__ru{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.product_abc__en{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+@media screen and (max-width: 1140px){
+  .product_abc {
+    width: 100%;
+  }
+}
