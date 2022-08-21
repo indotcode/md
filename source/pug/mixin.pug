@@ -60,7 +60,7 @@ mixin svgStarP()
 mixin carousel(title)
     div.carousel
         h3.carousel__h3  #{title}
-        div.splide
+        div.splide.splide--carousel
             div.splide__track
                 div.splide__list
                     div.splide__slide
@@ -199,3 +199,24 @@ mixin card_mini(images, title)
                             span От 448 Руб
                             +icon_nal()
                     div.card_mini__basket_icon
+
+
+mixin contact_social()
+    div.contact_social
+        h3.contact_social__h3 Задавайте вопросы, где вам удобно:
+        div.contact_social__list
+            a(href="#").contact_social__item
+                div.contact_social__images
+                    img(src=require("../../images/social/od3.png").default)
+            a(href="#").contact_social__item
+                div.contact_social__images
+                    img(src=require("../../images/social/tg3.png").default)
+            a(href="#").contact_social__item
+                div.contact_social__images
+                    img(src=require("../../images/social/tw3.png").default)
+            a(href="#").contact_social__item
+                div.contact_social__images
+                    img(src=require("../../images/social/vk3.png").default)
+            a(href="#").contact_social__item
+                div.contact_social__images
+                    img(src=require("../../images/social/ut3.png").default)

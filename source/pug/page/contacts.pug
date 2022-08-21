@@ -1,0 +1,93 @@
+extends ./../layout/main.pug
+
+block variables
+  - var title = 'Контакты MD'
+
+block content
+    include ../includes/header_fixed.pug
+
+    include ../includes/header.pug
+
+    section.be_healthy
+        div.wrapper.be_healthy__wrapper
+            h2.be_healthy__h2 Будьте здоровы
+            +search()
+            +search_tag(2)
+
+    section.breadcrumbs
+        div.wrapper.breadcrumbs__wrapper
+            div.breadcrumbs__list
+                a(href="#").breadcrumbs__item Интернет аптека
+                span Контакты
+
+    section.contact
+        div.wrapper.contact__wrapper
+            div.contact__content
+                div.contact__content_info
+                    p.
+                        Если вам необходима помощь службы поддержки, то напишите на электронную почту или обратитесь по указанным ниже номерам телефона.
+                    p
+                        a(href="mailto:info@planetazdorovo.ru") info@planetazdorovo.ru
+                        br
+                        | Телефон справочной: 8-800-7-550-500
+                        br
+                        | Телефон интернет-заказа: 8 (8352) 70-88-50
+                        br
+                        a(href="#") Адреса аптек
+                    +contact_social()
+                    p.
+                        Нажимая на кнопку «Подтвердить заказ» и регистрируясь на сайте, вы даете согласие на обработку своих персональных данных, принимаете условия пользовательского соглашения, соглашаетесь с политикой защиты и обработки персональных данных, положением о порядке хранения и защиты персональных данных пользователей, гарантируете, что предварительно ознакомились с вышеуказанными документами.
+                    br
+                    p.
+                        Наш офис находится по адресу: Республика Татарстан, г. Казань, ул. Габдулы Тукая, 1 корп. 3
+
+            div.contact__map.
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A75872f059be5bab46f4be3598f21628a70a7ecb55a68b44c6e6fb61eed82679f&amp;source=constructor" width="100%" height="435" frameborder="0"></iframe>
+
+    div.write
+        div.wrapper.write__wrapper
+            h2.write__h2 Напишите нам
+            form.write__form
+                div.write__one
+                    div.write__select.write--js
+                        input(hidden value="Сказать спасибо").write__select_input
+                        div.write__select_block
+                            div
+                                label Тема обращения
+                                span.write__select_name Сказать спасибо
+                            span.write__select_icon
+                                <svg width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L11 11L21 1" stroke="#5E5E5E"/>
+                                </svg>
+                        div.write__select_list
+                            div Сказать спасибо
+                            div Поделиться идеей
+                            div Вопрос сотрудничества
+                            div Пожаловаться
+                            div Устроиться на работу
+                    div.write__input
+                        label(for="name") Имя
+                        input(id="name")
+                    div.write__input
+                        label(for="phone") Контактный телефон
+                        input(id="phone")
+                    div.write__input
+                        label(for="email") Электронная почта
+                        input(id="email")
+                div.write__tho
+                    div.write__textarea
+                        textarea(placeholder="Ваше сообщение")
+                div.write__free
+                    button.write__button Отправить
+                div.write__info
+                    p.
+                        Предоставляя личные данные, вы подтверждаете, что ознакомлены с политикой конфиденциальности и принимаете пользовательское соглашение
+
+    section.benefits
+        div.wrapper.benefits__wrapper
+            h2.benefits__h2 Наши преимущества
+            +benefits_list()
+
+    include ../includes/social.pug
+
+    include ../includes/footer.pug

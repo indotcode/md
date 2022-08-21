@@ -1,0 +1,152 @@
+.write{
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+
+.write__h2{
+  font-size: 30px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+
+.write__form{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px
+}
+
+.write__one{
+  width: 260px;
+  display: grid;
+  gap: 10px
+}
+
+.write__select{
+  padding: 9px 12px;
+  background-color: #fff;
+  border: 1px solid #2C9FAE;
+  border-radius: 12px;
+  position: relative;
+}
+
+.write__select_block{
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  align-items: center;
+  cursor: pointer;
+  label{
+    font-size: 17px;
+    color: #B3B3B3;
+    display: block;
+    margin-bottom: 5px;
+  }
+  &--active .write__select_icon{
+    transform: rotate(180deg);
+  }
+}
+
+.write__select_name{
+  font-size: 17px;
+  display: block;
+}
+
+.write__input{
+  padding: 9px 12px;
+  background-color: #fff;
+  border: 1px solid #2C9FAE;
+  border-radius: 12px;
+  label{
+    font-size: 17px;
+    color: #B3B3B3;
+    display: block;
+    margin-bottom: 5px;
+  }
+  input{
+    border: 0;
+    font-size: 17px;
+  }
+}
+
+.write__select_list{
+  border: 1px solid #2c9fae;
+  background-color: #fff;
+  font-size: 17px;
+  top: 64px;
+  left: 0;
+  position: absolute;
+  width: 256px;
+  opacity: 0;
+  transition: .3s;
+  &--active{
+    visibility: visible;
+    opacity: 1;
+    transition: .3s;
+  }
+  > div{
+    padding: 0 12px;
+    cursor: pointer;
+    margin: 5px 0;
+    &:hover{
+      text-decoration-line: underline;
+      text-underline-offset: 3px;
+    }
+  }
+}
+
+.write__tho{
+  max-width: 520px;
+  width: calc(100% - 25px - 260px);
+}
+
+.write__textarea{
+  height: calc(100% - 18px);
+  padding: 9px 12px;
+  background-color: #fff;
+  border: 1px solid #2C9FAE;
+  border-radius: 12px;
+  position: relative;
+  textarea{
+    border: 0;
+    font-size: 17px;
+  }
+}
+
+.write__free{
+  width: 100%;
+}
+
+.write__button{
+  color: #fff;
+  font-size: 17px;
+  border: 1px solid #2C9FAE;
+  border-radius: 12px;
+  padding: 7px 10px;
+  cursor: pointer;
+  background-color: #2C9FAE;
+  position: relative;
+  top: -15px
+}
+
+.write__info{
+  p{
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 629px){
+  .write__tho{
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .write__textarea {
+    height: 150px;
+  }
+
+  .write__one {
+    width: 100%;
+  }
+}

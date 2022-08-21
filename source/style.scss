@@ -61,6 +61,7 @@
 @import '@splidejs/splide/src/css/core/index';
 
 @import "components/carousel/carousel";
+@import "components/carousel/carousel_about";
 
 @import "components/product/product";
 @import "components/product/product_analogues";
@@ -71,3 +72,8 @@
 @import "components/product/product_reviews";
 @import "components/product/product_pharmacy";
 @import "components/product/product_abc";
+
+@import "components/contact/contact";
+@import "components/contact/contact_social";
+
+@import "components/write/write";

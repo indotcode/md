@@ -14,4 +14,6 @@ import "./components/option/option_catalog__sort_select"
 
 import "./components/carousel/carousel"
 
+import "./components/write/write"
+
 

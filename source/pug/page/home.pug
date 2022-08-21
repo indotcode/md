@@ -155,35 +155,7 @@ block content
         div.map__block
             | <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A75872f059be5bab46f4be3598f21628a70a7ecb55a68b44c6e6fb61eed82679f&amp;source=constructor" width="100%" height="435" frameborder="0"></iframe>
 
-    section.social
-        div.wrapper.social__wrapper
-            div.social__subscribe
-                form.social__subscribe_form
-                    div.social__subscribe_title ПОДПИШИТЕСЬ НА НОВОСТИ
-                    div.social__subscribe_block
-                        input(name="subscribe" type="text" id="subscribe" placeholder="Введите электронную почту").social__subscribe_input
-                        button.social__subscribe_button
-                            | <svg width="16" height="27" viewBox="0 0 16 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.485976 23.7408C0.485975 26.4428 3.72311 27.8286 5.67828 25.9636L13.2404 18.7503C16.1316 15.9924 16.1316 11.3778 13.2404 8.61994L5.67828 1.40657C3.72312 -0.458428 0.485977 0.927415 0.485976 3.62942C0.485976 4.46931 0.829857 5.27257 1.43759 5.85228L4.33905 8.61993C7.23028 11.3778 7.23028 15.9924 4.33905 18.7503L1.43759 21.5179C0.829856 22.0976 0.485976 22.9009 0.485976 23.7408Z" fill="#C4C4C4"/>
-                            </svg>
-            div.social__link
-                div.social__link_title МЫ В СЕТЯХ
-                div.social__link_list
-                    a(href="#").div.social__link_item
-                        div.social__link_images
-                            img(src=require("../../images/social/od.png").default)
-                    a(href="#").div.social__link_item
-                        div.social__link_images
-                            img(src=require("../../images/social/tg.png").default)
-                    a(href="#").div.social__link_item
-                        div.social__link_images
-                            img(src=require("../../images/social/tw.png").default)
-                    a(href="#").div.social__link_item
-                        div.social__link_images
-                            img(src=require("../../images/social/vk.png").default)
-                    a(href="#").div.social__link_item
-                        div.social__link_images
-                            img(src=require("../../images/social/ut.png").default)
+    include ../includes/social.pug
 
     include ../includes/footer.pug
 

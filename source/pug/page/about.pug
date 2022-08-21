@@ -1,0 +1,49 @@
+extends ./../layout/main.pug
+
+block variables
+  - var title = 'Главная страница MD'
+
+block content
+    include ../includes/header_fixed.pug
+
+    include ../includes/header.pug
+
+    section.be_healthy
+        div.wrapper.be_healthy__wrapper
+            h2.be_healthy__h2 Будьте здоровы
+            +search()
+            +search_tag(2)
+
+    section.breadcrumbs
+        div.wrapper.breadcrumbs__wrapper
+            div.breadcrumbs__list
+                a(href="#").breadcrumbs__item Интернет аптека
+                span О компании
+
+    div.carousel_about
+        div.wrapper.carousel_about__wrapper
+            div.splide.splide--about
+                div.splide__track
+                    div.splide__list
+                        div.splide__slide
+                            a(href="#").carousel_about__a
+                                div.carousel_about__images
+                                    img(src=require("../../images/slider1.png").default)
+                        div.splide__slide
+                            a(href="#").carousel_about__a
+                                div.carousel_about__images
+                                    img(src=require("../../images/slider2.png").default)
+                        div.splide__slide
+                            a(href="#").carousel_about__a
+                                div.carousel_about__images
+                                    img(src=require("../../images/slider3.png").default)
+
+    section.benefits
+        div.wrapper.benefits__wrapper
+            h2.benefits__h2 Наши преимущества
+            +benefits_list()
+
+
+    include ../includes/social.pug
+
+    include ../includes/footer.pug
